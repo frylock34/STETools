@@ -15,9 +15,11 @@ namespace STETools
         {
             _generator = new Random();
             _modelPrefix = "STE320";
-            _datePrefix = DateTime.Today.ToString("yy") + DateTimeFormatInfo.InvariantInfo.Calendar.GetWeekOfYear(DateTime.Today,
-                              DateTimeFormatInfo.InvariantInfo.CalendarWeekRule,
-                              DateTimeFormatInfo.InvariantInfo.FirstDayOfWeek);
+            var currWeek = DateTimeFormatInfo.InvariantInfo.Calendar.GetWeekOfYear(DateTime.Today,
+                DateTimeFormatInfo.InvariantInfo.CalendarWeekRule,
+                DateTimeFormatInfo.InvariantInfo.FirstDayOfWeek);
+            var weekPrefix = currWeek > 9 ? $"{currWeek}" : $"0{currWeek}";
+            _datePrefix = weekPrefix + DateTime.Today.ToString("yy");
         }
 
         public string Generate()
