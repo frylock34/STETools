@@ -6,11 +6,11 @@ using System.Security;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Отредактируйте эти значения атрибутов, чтобы изменить сведения,
 // сопоставленные со сборкой.
-[assembly: AssemblyTitle("SNGeneratorExcel")]
+[assembly: AssemblyTitle("STETools")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SNGeneratorExcel")]
+[assembly: AssemblyProduct("STETools")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
